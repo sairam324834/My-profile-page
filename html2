@@ -1,153 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Universal Registration Form</title>
+    <title>LifeCare Hospital</title>
 </head>
 <body>
 
-    <h1>Universal Registration & Management Form</h1>
+    <!-- Header -->
+    <h1>LifeCare Multi-Speciality Hospital</h1>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Doctors</a> |
+        <a href="#">Services</a> |
+        <a href="#">Appointment</a> |
+        <a href="#">Contact</a>
+    </nav>
     <hr>
 
+    <!-- Welcome Section -->
+    <h2>Welcome to LifeCare Hospital</h2>
+    <img src="hospital.jpg" alt="Hospital Image" width="300">
+    <p>We provide quality healthcare services with modern facilities and experienced doctors.</p>
+
+    <!-- About Us -->
+    <h2>About Us</h2>
+    <p>LifeCare Hospital is a leading healthcare provider offering world-class treatment.</p>
+    <p>Our mission is to provide affordable and advanced medical care to everyone.</p>
+
+    <!-- Doctors -->
+    <h2>Our Doctors</h2>
+    <ul>
+        <li>Dr. Arun – Cardiologist</li>
+        <li>Dr. Meena – Neurologist</li>
+        <li>Dr. Karthik – Orthopedic</li>
+        <li>Dr. Priya – Pediatrician</li>
+    </ul>
+
+    <!-- Services -->
+    <h2>Our Services</h2>
+    <ol>
+        <li>Emergency Care</li>
+        <li>24/7 Pharmacy</li>
+        <li>Laboratory Services</li>
+        <li>ICU & Operation Theatre</li>
+    </ol>
+
+    <!-- Timings -->
+    <h2>Hospital Timings</h2>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+        <tr>
+            <td>Monday - Friday</td>
+            <td>8:00 AM</td>
+            <td>8:00 PM</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td colspan="2">Emergency Only</td>
+        </tr>
+    </table>
+
+    <!-- Appointment Form -->
+    <h2>Book an Appointment</h2>
     <form>
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
 
-        <!-- Personal Details -->
-        <fieldset>
-            <legend><b>Personal Details</b></legend>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
 
-            Full Name: <input type="text"><br><br>
-            Email: <input type="email"><br><br>
-            Phone Number: <input type="text"><br><br>
-            Date of Birth: <input type="date"><br><br>
+        <label>Phone:</label><br>
+        <input type="tel" placeholder="10-digit number"><br><br>
 
-            Gender:
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female
-            <input type="radio" name="gender"> Other
-            <br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other<br><br>
 
-            Marital Status:
-            <select>
-                <option>--Select--</option>
-                <option>Single</option>
-                <option>Married</option>
-            </select>
-        </fieldset>
+        <label>Select Department:</label><br>
+        <select>
+            <option>--Select--</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedic</option>
+            <option>Pediatrics</option>
+        </select><br><br>
 
-        <br>
+        <label>Appointment Date:</label><br>
+        <input type="date"><br><br>
 
-        <!-- Education Details -->
-        <fieldset>
-            <legend><b>Education Details</b></legend>
+        <label>Upload Medical Report:</label><br>
+        <input type="file"><br><br>
 
-            Highest Qualification:
-            <select>
-                <option>--Select Qualification--</option>
-                <option>B.Tech</option>
-                <option>M.Tech</option>
-                <option>Degree</option>
-            </select>
-            <br><br>
+        <label>Message:</label><br>
+        <textarea placeholder="Describe your issue"></textarea><br><br>
 
-            College Name: <input type="text"><br><br>
-            Year of Passing: <input type="text"><br><br>
-            Percentage: <input type="text">
-        </fieldset>
-
-        <br>
-
-        <!-- Professional Details -->
-        <fieldset>
-            <legend><b>Professional Details</b></legend>
-
-            Experience (Years): <input type="text"><br><br>
-
-            Skills:
-            <input type="checkbox"> HTML
-            <input type="checkbox"> CSS
-            <input type="checkbox"> JavaScript
-            <input type="checkbox"> Python
-            <input type="checkbox"> React
-            <br><br>
-
-            Current Company: <input type="text"><br><br>
-            Expected Salary: <input type="text">
-        </fieldset>
-
-        <br>
-
-        <!-- Account Setup -->
-        <fieldset>
-            <legend><b>Account Setup</b></legend>
-
-            Username: <input type="text"><br><br>
-            Password: <input type="password"><br><br>
-            Confirm Password: <input type="password"><br><br>
-
-            Security Question:
-            <select>
-                <option>Your Pet Name?</option>
-                <option>Your Birthplace?</option>
-            </select>
-            <br><br>
-
-            Answer: <input type="text">
-        </fieldset>
-
-        <br>
-
-        <!-- Address Details -->
-        <fieldset>
-            <legend><b>Address Details</b></legend>
-
-            Address Line:<br>
-            <textarea rows="4" cols="50"></textarea><br><br>
-
-            City: <input type="text"><br><br>
-            State: <input type="text"><br><br>
-            Pincode: <input type="text"><br><br>
-            Country: <input type="text">
-        </fieldset>
-
-        <br>
-
-        <!-- Emergency Contact -->
-        <fieldset>
-            <legend><b>Emergency Contact</b></legend>
-
-            Contact Person Name: <input type="text"><br><br>
-            Relationship: <input type="text"><br><br>
-            Emergency Phone: <input type="text">
-        </fieldset>
-
-        <br>
-
-        <!-- Upload Documents -->
-        <fieldset>
-            <legend><b>Upload Documents</b></legend>
-
-            Upload Resume: <input type="file"><br><br>
-            Upload Profile Photo: <input type="file">
-        </fieldset>
-
-        <br>
-
-        <!-- Declaration -->
-        <fieldset>
-            <legend><b>Declaration</b></legend>
-
-            <input type="checkbox">
-            I hereby declare that the above information is true and correct.
-        </fieldset>
-
-        <br>
-
-        <input type="submit" value="Submit Registration">
-        <input type="reset" value="Reset Form">
-
+        <button type="submit">Book Appointment</button>
+        <button type="reset">Clear Form</button>
     </form>
 
+    <!-- Contact -->
+    <h2>Contact Us</h2>
+    <p>Email: info@lifecare.com</p>
+    <p>Phone: +91 9876543210</p>
+
+    <!-- Footer -->
     <hr>
-    <p>&copy; 2026 Universal Registration System</p>
+    <p>© 2026 LifeCare Hospital. All Rights Reserved.</p>
 
 </body>
 </html>
